@@ -3,9 +3,15 @@ GET http://localhost:8080/public HTTP/1.1
 
 GET http://localhost:8080/private HTTP/1.1
 ###
+
 POST http://localhost:8080/signup HTTP/1.1
 Content-Type: application/json
 
+{
+    "name" : "sakura endo",
+    "email": "sakuraendo@gmail.com",
+    "password": "password"
+}
 ###
 
 POST http://localhost:8080/login HTTP/1.1
